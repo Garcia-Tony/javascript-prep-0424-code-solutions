@@ -1,32 +1,38 @@
 // create your loops here.
 function whileLoop1() {
-  const numArray = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+  const numArray = [];
   let index = 0;
-  while (index < 9) index++;
-  numArray.push(index);
+  while (index < 10) {
+    numArray.push(index);
+    index++;
+  }
   return numArray;
 }
-
-const whileLoop1Result = whileLoop1(9);
+const whileLoop1Result = whileLoop1();
 console.log('whileLoop1Result', whileLoop1Result);
 
 function whileLoop2() {
-  const numArray = [0, 2, 4, 6, 8, 10, 12, 14, 16];
+  const numArray = [];
   let index = 0;
-  while (index < 18) index++;
-  numArray.push(index);
+  while (index < 20) {
+    numArray.push(index);
+    index += 2;
+  }
   return numArray;
 }
 
-const whileLoop2Result = whileLoop2(18);
+const whileLoop2Result = whileLoop2();
 console.log('whileLoop2Result', whileLoop2Result);
 
 function forLoop1() {
-  const numArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-  for (let index = 0; index < 10; index++) return numArray;
+  const numArray = [];
+  for (let index = 0; index < 10; index++) {
+    numArray.push(index);
+  }
+  return numArray;
 }
 
-const forLoop1Result = forLoop1(9);
+const forLoop1Result = forLoop1();
 console.log('forLoop1Result', forLoop1Result);
 
 function forLoop2() {
@@ -35,8 +41,7 @@ function forLoop2() {
     console.log('Time to Explosion' + ' ' + index);
   }
 }
-
-var forLoops2 = forLoop2('stringVal' + 101);
+forLoop2();
 
 const person = {
   name: 'Ada LoveLace',
