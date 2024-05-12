@@ -1,5 +1,5 @@
-const number1 = '1+1';
-const number2 = '20-5';
+const number1 = '2';
+const number2 = '15';
 const product = number1 * number2;
 console.log('value of product:', 30);
 console.log('type of product:', typeof 30);
